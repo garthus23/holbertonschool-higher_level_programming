@@ -7,5 +7,5 @@ def remove_char_at(str, n):
     for i in str:
         if a != n:
             newstr = newstr + chr(ord(i))
-        a+= 1
+        a += 1
     return(newstr)
