@@ -19,9 +19,9 @@ listint_t *insert_node(listint_t **head, int number)
 		return (NULL);
 	newnode->n = number;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
-		newnode = *head;
+		*head = newnode;
 		return (*head);
 	}
 	tmpnode = *head;
