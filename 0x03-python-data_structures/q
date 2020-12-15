@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 
 
-def print_matrix_integer(matrix=[[]]):
+def add_tuple(tuple_a=(), tuple_b=()):
 
-    if len(matrix) > 0:
-        i = j = 0
-        while i < len(matrix):
-            while j < len(matrix[i]):
-                print("{:d}".format(matrix[i][j]), end=" ")
-                j += 1
-            print("{:d}".format(matric[i][j]))
-            j = 0
-            i += 1
+    list_add = []
+    if len(tuple_a) == 2 and len(tuple_b) == 2:
+        list_add = tuple_a + tuple_b 
+    for i in range(0, len(tuple_a) 
+        print(tuple_a[i])
+
+#    print(list_add)    
+    return (35000)
