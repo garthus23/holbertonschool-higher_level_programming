@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * is_palindrome - check if is a palindrome
+ * @head: a linked list
+ * Return: 1 if true 0 if false
+**/
 int is_palindrome(listint_t **head)
 {
 	listint_t *first;
@@ -9,18 +14,15 @@ int is_palindrome(listint_t **head)
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	int len;
 
 	first = *head;
 	last = *head;
 	while (last->next != NULL)
 	{
 		last = last->next;
-		len++;
+		j++;
 	}
-
-	j = len;
-	while (i != j)
+	while (first != last && last->next != first)
 	{
 		if (first->n == last->n)
 		{
@@ -28,7 +30,10 @@ int is_palindrome(listint_t **head)
 			last = *head;
 			k = 0;
 			while (k != j)
+			{
 				last = last->next;
+				k++;
+			}
 		}
 		else
 		{
