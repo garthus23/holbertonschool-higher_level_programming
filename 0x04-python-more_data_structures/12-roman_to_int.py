@@ -4,7 +4,7 @@
 def roman_to_int(roman_string):
 
     if roman_string is None:
-        return (None)
+        return (0)
     n = 0
     for i in roman_string:
         if i == 'V':
@@ -22,5 +22,5 @@ def roman_to_int(roman_string):
         elif i == 'M':
             n = n + 1000
         else:
-            return (None)
+            return (0)
     return (n)
