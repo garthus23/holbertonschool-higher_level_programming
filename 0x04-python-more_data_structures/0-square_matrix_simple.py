@@ -3,4 +3,14 @@
 
 def square_matrix_simple(matrix=[]):
 
-    print(list(map(lambda x: x**2, range(1,10))))
+    newlist = []
+
+    for i in range(5):
+
+    # Append an empty sublist inside the list
+        newlist.append([])
+
+    for j in range(5):
+        newlist[i].append(j)
+
+    print(newlist)
