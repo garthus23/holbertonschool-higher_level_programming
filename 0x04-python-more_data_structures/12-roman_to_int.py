@@ -3,7 +3,8 @@
 
 def roman_to_int(roman_string):
 
-    if roman_string is None:
+    stri = roman_string
+    if stri is None or not isinstance(stri, str):
         return (0)
     n = 0
     for i in roman_string:
