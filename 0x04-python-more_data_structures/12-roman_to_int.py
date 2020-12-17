@@ -9,16 +9,18 @@ def roman_to_int(roman_string):
     for i in roman_string:
         if i == 'V':
             n = n + 5
-        if i == 'I':
+        elif i == 'I':
             n = n + 1
-        if i == 'X':
+        elif i == 'X':
             n = n + 10
-        if i == 'L':
+        elif i == 'L':
             n = n + 50
-        if i == 'C':
+        elif i == 'C':
             n = n + 100
-        if i == 'D':
+        elif i == 'D':
             n = n + 500
-        if i == 'M':
+        elif i == 'M':
             n = n + 1000
+        else :
+            return (None)
     return (n)
