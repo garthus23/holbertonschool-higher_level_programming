@@ -21,6 +21,6 @@ def roman_to_int(roman_string):
             n = n + 500
         elif i == 'M':
             n = n + 1000
-        else :
+        else:
             return (None)
     return (n)
