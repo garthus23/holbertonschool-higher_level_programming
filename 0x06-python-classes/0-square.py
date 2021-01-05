@@ -2,9 +2,18 @@
 
 
 class Square:
-    """The summary line for a class docstring should fit on one line.
+    """Class methods are similar to regular functions.
 
-    blablabla blablablabla
+    Note:
+        Do not include the `self` parameter in the ``Args`` section.
+
+    Args:
+        param1: The first parameter.
+        param2: The second parameter.
+
+    Returns:
+        True if successful, False otherwise.
 
     """
+
     pass
