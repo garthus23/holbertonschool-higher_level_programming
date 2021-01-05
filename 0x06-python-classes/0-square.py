@@ -2,5 +2,9 @@
 
 
 class Square:
-"""The summary line for a class docstring should fit on one line."""
+    """The summary line for a class docstring should fit on one line.
+
+    blablabla blablablabla
+
+    """
     pass
