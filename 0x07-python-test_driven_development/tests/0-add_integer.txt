@@ -1,0 +1,11 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+''add_integer'' from the ''0-add_integer'' module:
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(6, 10)
+16
+>>> add_integer('hoho',0)
+a must be an integer
