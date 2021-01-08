@@ -1,0 +1,10 @@
+The ``2-matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+''add_integer'' from the ''0-add_integer'' module:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix2 = [[100,200,300],[500,600,700]]
+>>> matrix_divided(matrix2, 10)
+[10, 20, 30],[50, 60, 70]
