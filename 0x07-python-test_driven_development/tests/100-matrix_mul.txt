@@ -1,0 +1,11 @@
+The ``100-matrix_multiply`` module
+======================
+
+Using ``matrix_mul``
+-------------------
+''matrix_mul'' from the ''100-matrix_mul'' module:
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+>>> matrix1 =  [[12,7,3], [4 ,5,6], [7 ,8,9]]
+>>> matrix2 = [[5,8,1], [6,7,3], [4,5,9]]
+>>> matrix_mul(matrix1, matrix2)
+[[114, 160, 60], [74, 97, 73], [119, 157, 112]]
