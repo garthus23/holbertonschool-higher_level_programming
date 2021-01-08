@@ -26,5 +26,5 @@ def matrix_divided(matrix, div):
         for j in range(len(matrix[i])):
             if not isinstance(matrix[i][j], (int, float)):
                 raise TypeError(mustbeint)
-            new_matrix[i][j] = round((new_matrix[i][j] / 3), 2)
+            new_matrix[i][j] = round((new_matrix[i][j] / div), 2)
     return (new_matrix)

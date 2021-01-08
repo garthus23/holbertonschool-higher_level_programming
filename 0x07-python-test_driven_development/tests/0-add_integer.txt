@@ -7,5 +7,13 @@ Using ``add_integer``
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(6, 10)
 16
->>> add_integer('hoho',0)
-a must be an integer
+>>> add_integer(100, 12)
+112
+>>> add_integer(-3, 199)
+196
+>>> add_integer(-12, -12)
+-24
+>>> add_integer(-1000, +1000)
+0
+>>> add_integer(0, 0)
+0
