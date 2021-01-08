@@ -1,10 +1,23 @@
-The ``5-text_indentation`` module
-======================
+#!/usr/bin/python3
 
-Using ``text_indentation``
--------------------
-''text_indentation'' from the ''5-text_indentation'' module:
 
->>> text_indentation = __import__('5-text_indentation').text_indentation
->>> text_indentation("Hello toto")
-Hello toto
+"""
+    Unittest for max_integer([..])
+"""
+
+
+import unittest
+max_integer = __import__('6-max_integer').max_integer
+
+
+class TestMaxInteger(unittest.TestCase):
+    """
+        define classe unittest
+    """
+    def test_max(self):
+        """
+            test the max
+        """
+        actual = max_integer([1, 3, 6, 12])
+        expected = 12
+        self.assertEqual(actual, expected)
