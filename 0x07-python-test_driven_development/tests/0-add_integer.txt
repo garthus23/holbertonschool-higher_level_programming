@@ -24,3 +24,6 @@ Using ``add_integer``
 >>> add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> add_integer("a")
+Traceback (most recent call last):
+TypeError: a must be an integer
