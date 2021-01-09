@@ -13,6 +13,9 @@ def text_indentation(text):
     text_indentation that auto indent text
     """
     i = 0
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
     while i+1 != len(text):
 
         if text[i+1] == ' ' and text[i] == ' ':
