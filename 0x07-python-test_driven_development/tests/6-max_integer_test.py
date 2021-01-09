@@ -35,3 +35,6 @@ class TestMaxInteger(unittest.TestCase):
 
         actual = max_integer([12])
         self.assertEqual(actual, expected)
+
+        actual = max_integer([])
+        self.assertEqual(actual, None)
