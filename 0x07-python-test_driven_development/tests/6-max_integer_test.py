@@ -18,6 +18,11 @@ class TestMaxInteger(unittest.TestCase):
         """
             test the max
         """
-        actual = max_integer([1, 3, 6, 12])
+
         expected = 12
+
+        actual = max_integer([1, 3, 6, 12])
+        self.assertEqual(actual, expected)
+
+        actual = max_integer([12, 3, 6, 10])
         self.assertEqual(actual, expected)
