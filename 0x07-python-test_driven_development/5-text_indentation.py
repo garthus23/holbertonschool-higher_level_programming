@@ -17,7 +17,7 @@ def text_indentation(text):
 
         if text[i+1] == ' ' and text[i] == ' ':
                 i += 1
-        elif (text[i-1] == '.' or text[i-1] == '?' or text[i-1] == ':' and
+        elif ((text[i-1] == '.' or text[i-1] == '?' or text[i-1] == ':') and
               text[i] == ' '):
                 i += 1
         elif text[i] == '.' or text[i] == '?' or text[i] == ':':
