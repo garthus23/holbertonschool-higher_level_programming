@@ -33,7 +33,7 @@ class Rectangle:
         """ setter width """
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
-        if width < 0 :
+        if width < 0:
             raise ValueError("width must be >= 0")
         self.__width = width
 
@@ -42,34 +42,35 @@ class Rectangle:
         """ setter height """
         if not isinstance(height, int):
             raise TypeError("width must be an integer")
-        if height < 0 :
+        if height < 0:
             raise ValueError("width must be >= 0")
         self.__height = height
 
     def area(self):
         """ area calc """
-        return  self.__width * self.__height
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """ perimeter calc """
         if self.__width == 0 or self.__height == 0:
-            return 0 
+            return 0
         return self.__width * 2 + self.__height * 2
-       
+
     def __str__(self):
         """ str method """
         if self.__width or self.__height != 0:
-            if type(self.print_symbol) == type(''):
+            if isinstance(self.print_symbol, str):
                     str1 = ""
-            if type(self.print_symbol) == type([]):
+            if isinstance(self.print_symbol, list):
                     str1 = []
             for i in range(self.__height):
-                if type(self.print_symbol) == type(''):
+                if isinstance(self.print_symbol, str):
                     str1 = (str1 + self.print_symbol * self.__width)
-                    if i is not self.__height -1:
+                    if i is not self.__height - 1:
                         str1 = str1 + '\n'
-                if type(self.print_symbol) == type([]):
-                    str1 = (str(self.print_symbol) * self.__width * self.__height)
+                if isinstance(self.print_symbol, list):
+                    str1 = (str(self.print_symbol) * self.__width *
+                            self.__height)
         return str1
 
     def bigger_or_equal(rect_1, rect_2):
