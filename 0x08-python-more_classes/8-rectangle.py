@@ -8,8 +8,9 @@
 
 class Rectangle:
     """ class of rectangle """
-    
+
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """ init rectangle """
@@ -57,13 +58,31 @@ class Rectangle:
        
     def __str__(self):
         """ str method """
-        str = ""
         if self.__width or self.__height != 0:
+            if type(self.print_symbol) == type(''):
+                    str1 = ""
+            if type(self.print_symbol) == type([]):
+                    str1 = []
             for i in range(self.__height):
-                str = str + ("#" * self.__width) 
-                if i is not self.__height -1:
-                    str = str + '\n'
-        return str
+                if type(self.print_symbol) == type(''):
+                    str1 = (str1 + self.print_symbol * self.__width)
+                    if i is not self.__height -1:
+                        str1 = str1 + '\n'
+                if type(self.print_symbol) == type([]):
+                    str1 = (str(self.print_symbol) * self.__width * self.__height)
+        return str1
+
+    def bigger_or_equal(rect_1, rect_2):
+        if not type(rect_1) == Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not type(rect_2) == Rectangle:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if rect_1.area() > rect_2.area():
+            return rect_1
+        elif rect_2.area() > rect_1.area():
+            return rect_2
+        else:
+            return rect_1
 
     def __repr__(self):
         """ repr method """
