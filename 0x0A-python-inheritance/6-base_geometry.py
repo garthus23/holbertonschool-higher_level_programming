@@ -8,4 +8,7 @@
 
 class BaseGeometry():
     """ base geometry class """
-    pass
+
+    def area(self):
+        """ area definition """
+        raise TypeError("area() is not implemented")
