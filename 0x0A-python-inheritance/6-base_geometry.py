@@ -11,4 +11,4 @@ class BaseGeometry():
 
     def area(self):
         """ area definition """
-        raise TypeError("area() is not implemented")
+        raise TypeError("[Exception] area() is not implemented")
