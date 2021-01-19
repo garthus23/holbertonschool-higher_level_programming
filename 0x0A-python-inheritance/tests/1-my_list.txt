@@ -1,0 +1,30 @@
+The ``1-my_list`` module
+======================
+
+Using ``my_list``
+-----------------------
+''MyList'' from the ''1-my_list'' module:
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(0)
+>>> my_list.print_sorted()
+[0]
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+>>> my_list = MyList()
+>>> my_list.append(0)
+>>> my_list.append(-1)
+>>> my_list.append(-3)
+>>> my_list.append(12)
+>>> my_list.append(32)
+>>> my_list.append(-10)
+>>> my_list.print_sorted()
+[-10, -3, -1, 0, 12, 32]
+>>> my_list = MyList()
+>>> my_list.append(-12)
+>>> my_list.append(-100)
+>>> my_list.append(-19)
+>>> my_list.append(-12)
+>>> my_list.print_sorted()
+[-100, -19, -12, -12]
