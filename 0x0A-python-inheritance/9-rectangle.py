@@ -14,7 +14,7 @@ class BaseGeometry():
 
     def integer_validator(self, name, value):
         """ integer validator """
-        if value is True or isinstance(value, int):
+        if not isinstance(value, int) or value is True:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
@@ -31,7 +31,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """ area method to calcul area """
-        return (self.__height * self.__width)
+        return(self.__height * self.__width)
 
     def __str__(self):
         """ str to print the str """
