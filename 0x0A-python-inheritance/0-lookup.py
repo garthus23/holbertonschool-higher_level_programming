@@ -9,4 +9,4 @@
 def lookup(obj):
     """ print class methods object """
 
-    print(dir(obj))
+    return(dir(obj))
