@@ -24,4 +24,4 @@ TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 >>> bg.integer_validator(-2, -5)
 Traceback (most recent call last):
-raise ValueError("{} must be greater than 0".format(name))
+ValueError: -2 must be greater than 0
