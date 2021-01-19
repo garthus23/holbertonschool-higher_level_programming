@@ -12,6 +12,7 @@ class MyList(list):
 
     def print_sorted(self):
         """ sort the list """
-        x = self.copy()
-        x = sorted(x)
-        print(x)
+        if self is not None:
+            x = self.copy()
+            x = sorted(x)
+            print(x)
