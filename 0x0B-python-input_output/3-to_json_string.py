@@ -5,6 +5,7 @@
     JSON string to Object
 """
 
+
 def to_json_string(my_obj):
     """ to_json_string """
     import json
