@@ -2,7 +2,7 @@
 
 
 """
-   class_to_json 
+   class_to_json
 """
 
 
