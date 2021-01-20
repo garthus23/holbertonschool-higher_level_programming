@@ -7,6 +7,7 @@
 
 
 def write_file(filename="", text=""):
+    """ write a file """
     with open(filename, 'w') as f:
         ln = f.write(text)
         f.close()
