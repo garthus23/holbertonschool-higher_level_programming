@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-import json
 """
     JSON string to Object
 """
@@ -9,4 +8,5 @@ import json
 
 def from_json_string(my_obj):
     """ to_json_string """
+    import json
     return(json.loads(my_obj))
