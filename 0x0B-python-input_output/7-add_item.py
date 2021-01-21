@@ -15,10 +15,10 @@ if __name__ == "__main__":
 
     list1 = []
 
-    try : 
+    try:
         with open('add_item.json', 'r') as f:
             for line in f:
-                 list1 = json.loads(line)
+                list1 = json.loads(line)
     except:
         pass
 
