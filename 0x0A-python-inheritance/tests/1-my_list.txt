@@ -9,8 +9,6 @@ Using ``my_list``
 >>> my_list.append(0)
 >>> my_list.print_sorted()
 [0]
->>> print(my_list)
-[0]
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
@@ -30,3 +28,5 @@ Using ``my_list``
 >>> my_list.append(-12)
 >>> my_list.print_sorted()
 [-100, -19, -12, -12]
+>>> print(my_list)
+[-12, -100, -19, -12]
