@@ -28,3 +28,5 @@ Using ``my_list``
 >>> my_list.append(-12)
 >>> my_list.print_sorted()
 [-100, -19, -12, -12]
+>>> my_list.append('holberton')
+
