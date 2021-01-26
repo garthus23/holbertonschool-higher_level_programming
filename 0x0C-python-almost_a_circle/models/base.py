@@ -27,7 +27,7 @@ class Base:
         if list_dictionaries is None:
             return ("[]")
         else:
-            return (json.dumps(list_dictionaries))        
+            return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -54,7 +54,7 @@ class Base:
 
     @classmethod
     def update(cls, *args, **kwargs):
-        if len(args) >= 1 : 
+        if len(args) >= 1:
             for i in range(len(args)):
                 if len(args) >= 1:
                     cls.id = args[0]
@@ -69,7 +69,7 @@ class Base:
         else:
             for key, value in kwargs.items():
                     setattr(cls, key, value)
-        
+
     @classmethod
     def load_from_file(cls):
         name = "{}.json".format(cls.__name__)
