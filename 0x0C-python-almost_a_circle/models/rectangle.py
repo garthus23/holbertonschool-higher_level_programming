@@ -94,7 +94,7 @@ class Rectangle(Base):
         return str1
 
     def update(self, *args, **kwargs):
-        if len(args) >= 1 :
+        if len(args) >= 1:
             for i in range(len(args)):
                 if len(args) >= 1:
                     self.id = args[0]
@@ -111,5 +111,10 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        dicto = {"id": self.id, "width": self.__width, "height": self.__height, "x": self.__x, "y": self.__y}
-        return dicto
+        return ({
+                "id": self.id,
+                "width": self.__width,
+                "height": self.__height,
+                "x": self.__x,
+                "y": self.__y
+                })
