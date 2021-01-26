@@ -39,6 +39,8 @@ class TestsRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, 10, 10, 10, 10, 10 , -10)
 
 
-    def test_below_0_height(self):
-        self.assertRaises(ValueError, Rectangle, 10, 9, -2)
-
+    def test_area(self):
+        r2 = Rectangle(10, 2)
+        self.assertEqual(r2.area(), 20)
+        r2 = Rectangle(8, 7, 0, 0, 12)
+        self.assertEqual(r2.area(), 56)
