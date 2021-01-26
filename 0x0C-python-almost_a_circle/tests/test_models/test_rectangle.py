@@ -17,13 +17,16 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(r3.height, 2)
         self.assertEqual(r3.x, 4)
         self.assertEqual(r3.y, 5)
+
+    def test_all_0(self):
         self.assertRaises(ValueError, Rectangle, 0, 0, 0, 0, 0)
 
     def test_str(self):
         self.assertRaises(TypeError, Rectangle, 10, "2")
 
-    def test_below_0_width(self):
+    def test_below_0(self):
         self.assertRaises(ValueError, Rectangle, 10, -10)
 
     def test_below_0_height(self):
-        self.assertRaises(ValueError, Rectangle, 10, 9, -2) 
+        self.assertRaises(ValueError, Rectangle, 10, 9, -2)
+
