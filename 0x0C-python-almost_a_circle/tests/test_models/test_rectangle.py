@@ -24,7 +24,6 @@ class TestsRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Rectangle, 1)
 
     def test_str(self):
-
         self.assertRaises(TypeError, Rectangle, "10")
         self.assertRaises(TypeError, Rectangle, 10, "2")
         self.assertRaises(TypeError, Rectangle, 10, 3, "4")
@@ -44,3 +43,10 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(r2.area(), 20)
         r2 = Rectangle(8, 7, 0, 0, 12)
         self.assertEqual(r2.area(), 56)
+
+    def test_str(self):
+        r4 = Rectangle(1, 1, 1, 1, 1)
+        self.assertEqual(r4.__str__(), "[Rectangle] (1) 1/1 - 1/1")
+        r4.update(3)
+        self.assertEqual(r4.__str__(), "[Rectangle] (3) 1/1 - 1/1")
+
