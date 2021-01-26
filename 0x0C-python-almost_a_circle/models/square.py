@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+""" module rectangle """
+from models.rectangle import Rectangle
 
 
 """
     Square Class
 """
-from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
