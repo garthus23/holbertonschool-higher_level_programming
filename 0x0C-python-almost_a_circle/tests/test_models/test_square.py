@@ -22,12 +22,18 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(s3.size, 10)
         self.assertEqual(s3.x, 2)
         self.assertEqual(s3.y, 4)
-"""
-    def test_all_0(self):
-        self.assertRaises(ValueError, Rectangle, 0, 0, 0, 0, 0)
-        self.assertRaises(TypeError, Rectangle)
-        self.assertRaises(TypeError, Rectangle, 1)
 
+    def test_all_0(self):
+        self.assertRaises(ValueError, Square, 0, 0, 0, 0)
+        self.assertRaises(TypeError, Square)
+
+    def test_one_arg(self):
+        s3 = Square(9)
+        self.assertEqual(s3.size, 9)
+        self.assertEqual(s3.x, 0)
+        self.assertEqual(s3.y, 0)
+        self.assertEqual(s3.id, 9)
+"""
     def test_str(self):
         self.assertRaises(TypeError, Rectangle, "10")
         self.assertRaises(TypeError, Rectangle, 10, "2")
