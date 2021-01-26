@@ -16,14 +16,13 @@ class TestsRectangle(unittest.TestCase):
 
 
 
-"""    def test_all_args(self):
-        r3 = Rectangle(10, 2, 4, 5, 6)
-        self.assertEqual(r3.id, 6)
-        self.assertEqual(r3.width, 10)
-        self.assertEqual(r3.height, 2)
-        self.assertEqual(r3.x, 4)
-        self.assertEqual(r3.y, 5)
-
+    def test_all_args(self):
+        s3 = Square(10, 2, 4, 5)
+        self.assertEqual(s3.id, 5)
+        self.assertEqual(s3.size, 10)
+        self.assertEqual(s3.x, 2)
+        self.assertEqual(s3.y, 4)
+"""
     def test_all_0(self):
         self.assertRaises(ValueError, Rectangle, 0, 0, 0, 0, 0)
         self.assertRaises(TypeError, Rectangle)
