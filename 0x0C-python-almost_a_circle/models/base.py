@@ -55,6 +55,7 @@ class Base:
 
     @classmethod
     def update(cls, *args, **kwargs):
+        """ method to update """
         if len(args) >= 1:
             for i in range(len(args)):
                 if len(args) >= 1:
@@ -73,6 +74,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        """ method to load """
         name = "{}.json".format(cls.__name__)
         with open(name, 'r') as f:
             list1 = f.readlines()
