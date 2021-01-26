@@ -1,18 +1,10 @@
 import unittest
+from models.rectangle import Rectangle
+from models.base import Base
 
+class TestsRectangle(unittest.TestCase):
 
-class TestStringMethods(unittest.TestCase):
+    def test_int(self):
+        r1 = Rectangle(10, 2)
+        self.assertEqual(r1.id, 4)
 
-    def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOO')
-
-    def test_isupper(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
-
-    def test_split(self):
-        s = 'hello world'
-        self.assertEqual(s.split(), ['hello', 'world'])
-        # check that s.split fails when the separator is not a string
-        with self.assertRaises(TypeError):
-            s.split(2)
