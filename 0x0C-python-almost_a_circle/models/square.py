@@ -37,7 +37,8 @@ class Square(Rectangle):
         return str1
 
     def update(self, *args, **kwargs):
-        if len(args) >= 1 :
+        """ update method """
+        if len(args) >= 1:
             for i in range(len(args)):
                 if len(args) >= 1:
                     self.id = args[0]
@@ -52,5 +53,6 @@ class Square(Rectangle):
                 setattr(self, key, value)
 
     def to_dictionary(self):
+        """" to_dictionary method """
         dicto = {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
         return dicto
