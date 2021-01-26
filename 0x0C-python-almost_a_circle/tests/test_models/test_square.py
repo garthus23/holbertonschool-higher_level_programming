@@ -13,9 +13,6 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(s1.size, 10)
         self.assertEqual(s1.x, 2)
 
-
-
-
     def test_all_args(self):
         s3 = Square(10, 2, 4, "a")
         self.assertEqual(s3.id, "a")
@@ -47,7 +44,6 @@ class TestsRectangle(unittest.TestCase):
         self.assertRaises(TypeError, Square, 10, 10, 10, -10, 10, 10)
         self.assertRaises(TypeError, Square, 10, 10, 10, 10, 10 , -10)
 
-
     def test_area(self):
         s2 = Square(10, 2)
         self.assertEqual(s2.area(), 100)
@@ -59,5 +55,11 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(s4.__str__(), "[Square] (1) 1/1 - 1")
         s4.update(5)
         self.assertEqual(s4.__str__(), "[Square] (5) 1/1 - 1")
+        s4.update(size=7, id=89, y=1)
+        self.assertEqual(s4.__str__(), "[Square] (89) 1/1 - 7")
 
-
+    def test_to_dictionary(self):
+        r2 = Rectangle(10, 2, 1, 9)
+        self.assertEqual(r2.to_dictionary(), {'id': 14, 'width': 10, 'height': 2, 'x': 1, 'y': 9})
+        s1 = Square(1, 1, 1, 1)
+        self.assertEqual(s1.to_dictionary(), {'id': 1, 'size': 1, 'x': 1, 'y': 1})
