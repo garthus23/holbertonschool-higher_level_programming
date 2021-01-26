@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+from models.base import Base
 
 
 """
     Rectangle Class
 """
-from models.base import Base
 
 
 class Rectangle(Base):
@@ -94,6 +94,7 @@ class Rectangle(Base):
         return str1
 
     def update(self, *args, **kwargs):
+        """ def update """
         if len(args) >= 1:
             for i in range(len(args)):
                 if len(args) >= 1:
@@ -111,6 +112,7 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
+        """ def to dictionary """
         return ({
                 "id": self.id,
                 "width": self.__width,
