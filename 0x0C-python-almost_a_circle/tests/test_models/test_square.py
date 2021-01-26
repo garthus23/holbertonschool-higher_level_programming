@@ -1,16 +1,22 @@
 import unittest
+from models.square import Square
 from models.rectangle import Rectangle
 from models.base import Base
 
 class TestsRectangle(unittest.TestCase):
 
     def test_int(self):
-        r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 7)
-        self.assertEqual(r1.width, 10)
-        self.assertEqual(r1.height, 2)
+        s1 = Square(10, 2)
+        self.assertEqual(s1.id, 8)
+        self.assertEqual(s1.width, 10)
+        self.assertEqual(s1.height, 10)
+        self.assertEqual(s1.size, 10)
+        self.assertEqual(s1.x, 2)
 
-    def test_all_args(self):
+
+
+
+"""    def test_all_args(self):
         r3 = Rectangle(10, 2, 4, 5, 6)
         self.assertEqual(r3.id, 6)
         self.assertEqual(r3.width, 10)
@@ -49,3 +55,5 @@ class TestsRectangle(unittest.TestCase):
         self.assertEqual(r4.__str__(), "[Rectangle] (1) 1/1 - 1/1")
         r4.update(3)
         self.assertEqual(r4.__str__(), "[Rectangle] (3) 1/1 - 1/1")
+
+"""
