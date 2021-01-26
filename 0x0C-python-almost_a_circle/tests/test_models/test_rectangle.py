@@ -8,3 +8,5 @@ class TestsRectangle(unittest.TestCase):
         r1 = Rectangle(10, 2)
         self.assertEqual(r1.id, 4)
 
+    def test_str(self):
+        self.assertRaises(TypeError, Rectangle, 10, "2")
