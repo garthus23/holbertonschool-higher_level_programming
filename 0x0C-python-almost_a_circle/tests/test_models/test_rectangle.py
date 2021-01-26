@@ -20,6 +20,8 @@ class TestsRectangle(unittest.TestCase):
 
     def test_all_0(self):
         self.assertRaises(ValueError, Rectangle, 0, 0, 0, 0, 0)
+        self.assertRaises(TypeError, Rectangle)
+        self.assertRaises(TypeError, Rectangle, 1)
 
     def test_str(self):
 
