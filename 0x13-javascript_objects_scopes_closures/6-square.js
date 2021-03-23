@@ -8,7 +8,9 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    this.print(c);
+    if ((/[a-zA-Z]/).test(c)) {
+      this.print(c);
+    }
   }
 }
 module.exports = Square;
