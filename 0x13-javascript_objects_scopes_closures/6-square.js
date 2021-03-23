@@ -35,7 +35,7 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    super.print(c);
+    this.print(c);
   }
 }
 module.exports = Square;
