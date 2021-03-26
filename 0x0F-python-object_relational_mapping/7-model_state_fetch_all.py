@@ -13,8 +13,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     query = session.query(State)
+    """
     res = str(query.all())
     res = res.replace("[", "")
     res = res.replace("]", "")
     res = res.replace(", ", "\n")
-    print(res)
+    """
+    for res in query.all() :
+        print(res)
