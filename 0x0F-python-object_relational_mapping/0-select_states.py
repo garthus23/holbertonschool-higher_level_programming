@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-
+"""
+module sys anf mysqld
+"""
 import sys
 import MySQLdb
+
+"""
+    Select everything in the state table
+"""
 
 if __name__ == "__main__":
 
