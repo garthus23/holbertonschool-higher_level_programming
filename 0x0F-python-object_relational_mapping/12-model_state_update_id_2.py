@@ -1,10 +1,15 @@
 #!/usr/bin/python3
-
+"""
+    module sys anf mysqld
+"""
 import sys
 from model_state import Base, State
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
+"""
+    changes the name of a State object from the database
+"""
 
 if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
