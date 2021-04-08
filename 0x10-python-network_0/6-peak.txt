@@ -1,2 +1,2 @@
 # complexity algo 
-O(n)
+O(n2)
