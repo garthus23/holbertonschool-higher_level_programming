@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 # get code url
-curl -sI "$1" | head -n 1 | cut -d ' ' -f 2
+curl -s -o /dev/null -w "%{http_code}" "$1"
