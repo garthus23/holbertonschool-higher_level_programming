@@ -1,3 +1,3 @@
 #!/bin/bash
 # curl catch me
-curl -s https://en.wikipedia.org/wiki/You_Got_Me! | head | grep title | sed 's/<title>//' | sed 's/\ -.*//' | sed 's/G/g/' | sed 's/M/m/'
+curl -s 0.0.0.0:5000/catch_me | head -n 1 | sed -e 's/.*/You got me!/'
