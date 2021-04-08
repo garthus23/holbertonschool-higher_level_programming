@@ -1,3 +1,3 @@
 #!/bin/bash
 # del request curl
-curl "$1" --data "selection=filename&action=delete"
+curl -X DELETE "$1" -H "Accept: application/json"
