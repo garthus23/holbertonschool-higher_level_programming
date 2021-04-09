@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
 
-
 """ module urllib """
 import requests
 import sys
-
 
 
 """"
@@ -14,6 +12,6 @@ import sys
 
 
 if __name__ == "__main__":
-
-    response = dict(requests.get('https://intranet.hbtn.io/status').headers)
-    print(response['X-Request-Id'])
+    if len(sys.argv) == 2:
+        response = dict(requests.get(sys.argv[1]).headers)
+        print(response['X-Request-Id'])
