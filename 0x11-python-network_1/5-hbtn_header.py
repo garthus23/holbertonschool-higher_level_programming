@@ -13,5 +13,9 @@ import sys
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        response = dict(requests.get(sys.argv[1]).headers)
-        print(response.get('X-Request-Id'))
+        try:
+            with requests.get(sys.argv[1]) as response:
+                if response:
+                    print(dict(response.headers).get('X-Request-Id'))
+        except:
+            None
