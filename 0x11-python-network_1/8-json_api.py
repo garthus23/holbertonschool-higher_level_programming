@@ -23,5 +23,3 @@ if __name__ == "__main__":
                 print('Not a valid JSON')
         else:
             print('No result')
-    else:
-        print('No result')

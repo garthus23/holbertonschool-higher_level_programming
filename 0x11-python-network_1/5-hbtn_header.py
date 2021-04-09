@@ -18,4 +18,4 @@ if __name__ == "__main__":
                 if response:
                     print(dict(response.headers).get('X-Request-Id'))
         except:
-            None
+            pass
