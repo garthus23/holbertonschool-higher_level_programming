@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 
 
-
 """ module urllib """
 import requests
 
 
-
-""""
-	script that fetches an url
+"""
+     script that fetches an url
 """
 
 
