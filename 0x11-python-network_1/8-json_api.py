@@ -19,12 +19,9 @@ if __name__ == "__main__":
             if response.get('id') and response.get('name'):
                 print("[{}] {}".format(response.get('id'),
                                        response.get('name')))
-            # elif len(response) == 0:
-            #     print('No result')
             else:
                 print('Not a valid JSON')
         else:
             print('No result')
     else:
-        data['q'] = ""
         print('No result')
