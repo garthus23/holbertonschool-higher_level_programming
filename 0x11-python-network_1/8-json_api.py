@@ -16,11 +16,11 @@ if __name__ == "__main__":
         response = requests.post('http://0.0.0.0:5000/search_user',
                                  data={'q': sys.argv[1]}).json()
         if response:
-            if response['id'] and response['name']:
+            if response.get('id') and response.get('name'):
                 print("[{}] {}".format(response.get('id'),
                                        response.get('name')))
-            elif len(response) == 0:
-                print('No result')
+            # elif len(response) == 0:
+            #     print('No result')
             else:
                 print('Not a valid JSON')
         else:
