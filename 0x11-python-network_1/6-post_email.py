@@ -6,8 +6,8 @@ import requests
 import sys
 
 
-""""
-	script that fetches an url
+"""
+        script that fetches an url
 """
 
 
