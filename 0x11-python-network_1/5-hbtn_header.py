@@ -6,12 +6,12 @@ import requests
 import sys
 
 
-""""
-	script that fetches an url
+"""
+        script that fetches an url
 """
 
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         response = dict(requests.get(sys.argv[1]).headers)
-        print(response['X-Request-Id'])
+        print(response.get('X-Request-Id'))
