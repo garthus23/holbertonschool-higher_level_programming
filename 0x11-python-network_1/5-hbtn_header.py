@@ -16,6 +16,6 @@ if __name__ == "__main__":
         try:
             with requests.get(sys.argv[1]) as response:
                 if response:
-                    print(dict(response.headers).get('X-Request-Id'))
+                    print(dict(response.headers).get('x-request-id'))
         except:
             pass
