@@ -9,7 +9,6 @@ if (process.argv.length === 4) {
       return console.error(error);
     }
     text = ('body:', body);
-    console.log(text);
     const fs = require('fs');
     fs.writeFile(process.argv[3], text, 'utf8', function (err) {
       if (err) {
